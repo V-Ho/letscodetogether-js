@@ -9,7 +9,23 @@
 
     <div class="jumbotron">
       <h1>Original Header</h1>
+
+      <button type="button" class="btn btn-primary" onClick="changeText()">
+        Button Text
+      </button>
     </div>
+
+    <script>
+    //All of our javascript goes in here:
+
+    const header = document.querySelector('h1');
+
+    function changeText() {
+      header.innerText = 'New Header Text';
+    }
+
+
+    </script>
 
   </body>
 </html>
